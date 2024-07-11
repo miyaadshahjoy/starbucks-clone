@@ -1,0 +1,40 @@
+@keyframes animate {
+  from {
+    transform: rotate(0deg) translateY(0px);
+  }
+  to {
+    transform: rotate(-45deg) translateY(0px);
+  }
+}
+
+@keyframes animate3 {
+  from {
+    transform: rotate(0deg) translateY(0px);
+  }
+  to {
+    transform: rotate(45deg) translateY(0px);
+  }
+}
+@keyframes rotateToggle {
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes animateReverse {
+  0% {
+    transform: rotate(-45deg) translateY(0px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0px);
+  }
+}
+
+@keyframes animate3Reverse {
+  0% {
+    transform: rotate(45deg) translateY(0px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0px);
+  }
+}

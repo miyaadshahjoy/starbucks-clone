@@ -1,0 +1,65 @@
+.wrapper-getting-started {
+  margin-top: 4.0625rem;
+  margin-bottom: 4.0625rem;
+  @include breakpoint-up(large) {
+    margin-top: 7.8125rem;
+    margin-bottom: 7.8125rem;
+  }
+}
+
+.getting-started {
+  font-size: $verySmallFont;
+  @include breakpoint-up(large) {
+    font-size: $smallFont;
+    text-align: center;
+  }
+
+  &__features {
+    @include breakpoint-up(large) {
+      display: flex;
+      gap: 40px;
+    }
+  }
+
+  &__heading {
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+
+  &__subheading {
+    text-align: center;
+    margin-bottom: 3.125rem;
+  }
+  &__features {
+    .feature {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      @include breakpoint-up(large) {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      &__number {
+        img {
+          //   display: block;
+          height: 50px;
+          width: 50px;
+          @include breakpoint-up(large) {
+            text-align: center;
+          }
+        }
+      }
+      &__text-heading {
+        margin-bottom: 1.75rem;
+      }
+
+      &__text-desc {
+        text-align: left;
+        @include breakpoint-up(large) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.wrapper-hero {
+  background-image: url("../../images/xl-hero-desktop_2021.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $bgColor;
+  @include breakpoint-down(medium) {
+    background-image: url("../../images/hero-mobile_2021.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $bgColor;
+  }
+}
+
+.hero {
+  height: 31.25rem;
+  font-size: $smallFont;
+  flex-direction: column;
+
+  @include breakpoint-up(large) {
+    height: 50.625rem;
+    font-size: $bodyFont;
+    flex-direction: row;
+  }
+  &__section--1 {
+    flex: 50%;
+    @include breakpoint-down(medium) {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+  }
+  &__heading {
+    @include breakpoint-up(large) {
+      font-size: 2.25rem;
+    }
+    line-height: 1.5;
+    font-weight: 600;
+
+    margin-bottom: 1.875rem;
+    @include breakpoint-down(medium) {
+      font-size: 1.75rem;
+      margin-bottom: 1.5625rem;
+    }
+  }
+  &__subheading {
+    margin-bottom: 2.5rem;
+    @include breakpoint-down(medium) {
+      margin-bottom: 2.1875rem;
+    }
+  }
+  &__join--btn {
+    a {
+      display: inline-block;
+      color: #ffffff;
+      background-color: $mediumJungleGreen;
+      border-radius: 50px;
+    }
+    margin-bottom: 1.25rem;
+  }
+  &__join--btn-mobile {
+    a {
+      display: inline-block;
+      color: #ffffff;
+      background-color: $mediumJungleGreen;
+      border-radius: 50px;
+    }
+    margin-bottom: 1.125rem;
+  }
+  &__section--2 {
+    flex: 50%;
+  }
+}

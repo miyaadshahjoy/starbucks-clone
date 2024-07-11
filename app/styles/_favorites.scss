@@ -1,0 +1,56 @@
+.wrapper-favorites {
+  padding-top: 3.4375rem;
+  background-color: $secondaryBgColor;
+}
+.content-container {
+  position: relative;
+}
+.favorites {
+  text-align: center;
+  &__heading {
+    margin-bottom: 2.1875rem;
+  }
+
+  &__tabs {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    &--btn {
+      height: 3.25rem;
+      width: 20%;
+      padding: 0.5rem 0.5rem 1rem;
+      border: none;
+      transition: all 200ms ease-in-out;
+      &:focus {
+        border-bottom: 4px solid $mediumJungleGreen;
+      }
+    }
+    &--content {
+      text-align: center;
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        height: 100%;
+        background-color: $bgColor;
+        z-index: -1;
+      }
+      .content-image img {
+        display: block;
+        width: 100%;
+        // border: 1px solid red;
+        padding-bottom: 2.5rem;
+        padding-top: 2.5rem;
+      }
+      .content-heading {
+        margin-bottom: 1.375rem;
+      }
+      .content-desc {
+        font-size: $verySmallFont;
+        padding-bottom: 3rem;
+      }
+    }
+  }
+}
