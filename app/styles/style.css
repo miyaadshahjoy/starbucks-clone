@@ -318,7 +318,7 @@ button {
   font-size: 0.875rem;
   color: white;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 .banner__button {
   color: #ffffff;
@@ -490,43 +490,24 @@ button {
   background-color: #f1f8f6;
 }
 
-.content-container {
-  position: relative;
-}
-
 .favorites {
+  position: relative;
   text-align: center;
 }
 .favorites__heading {
   margin-bottom: 2.1875rem;
-}
-.favorites__tabs {
-  position: absolute;
-  right: 0;
-  left: 0;
-  width: 100%;
 }
 .favorites__tabs--btn {
   height: 3.25rem;
   width: 20%;
   padding: 0.5rem 0.5rem 1rem;
   border: none;
+  background-color: #f1f8f6;
   transition: all 200ms ease-in-out;
-}
-.favorites__tabs--btn:focus {
-  border-bottom: 4px solid #008248;
 }
 .favorites__tabs--content {
   text-align: center;
-}
-.favorites__tabs--content::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  right: 0;
-  height: 100%;
   background-color: #d4e9e1;
-  z-index: -1;
 }
 .favorites__tabs--content .content-image img {
   display: block;
@@ -540,4 +521,10 @@ button {
 .favorites__tabs--content .content-desc {
   font-size: 0.875rem;
   padding-bottom: 3rem;
+}
+.favorites__underline {
+  height: 4px;
+  background-color: #008248;
+  width: 20%;
+  transition: all 400ms ease-in-out;
 }/*# sourceMappingURL=style.css.map */

@@ -6,6 +6,7 @@ const bannerTextEl = document.querySelector(".banner__text");
 const toggleBtn = document.querySelector(".header__toggle--btn");
 const mobileMenu = document.querySelector(".header__mobile--menu");
 const overlayEl = document.querySelector(".overlay");
+const underlineEl = document.querySelector(".favorites__underline");
 
 const tabContents = document.querySelectorAll(".favorites__tabs--content");
 const tabButtons = document.querySelectorAll(".favorites__tabs--btn");
@@ -48,9 +49,11 @@ tabButtons.forEach((btn) =>
     tabContents.forEach((tabContent) => {
       tabContent.classList.remove("active");
     });
-    // console.log(buttonNumber);
+    console.log(buttonNumber);
     document
       .querySelector(`.tabs__content--${buttonNumber}`)
       .classList.add("active");
+    //tab underline
+    underlineEl.style.marginLeft = (buttonNumber - 1) * 20 + "%";
   })
 );
