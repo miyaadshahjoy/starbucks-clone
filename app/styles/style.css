@@ -497,6 +497,13 @@ button {
 .favorites__heading {
   margin-bottom: 2.1875rem;
 }
+@media (min-width: 64em) {
+  .favorites__tabs {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+}
 .favorites__tabs--btn {
   height: 3.25rem;
   width: 20%;
@@ -509,22 +516,64 @@ button {
   text-align: center;
   background-color: #d4e9e1;
 }
+.favorites__tabs--content .content-image {
+  flex: 50%;
+}
+@media (min-width: 64em) {
+  .favorites__tabs--content .content-image {
+    max-width: 375px;
+  }
+}
 .favorites__tabs--content .content-image img {
   display: block;
   width: 100%;
   padding-bottom: 2.5rem;
   padding-top: 2.5rem;
 }
+.favorites__tabs--content .content-text {
+  flex: 50%;
+}
+@media (min-width: 64em) {
+  .favorites__tabs--content .content-text {
+    text-align: start;
+    padding: 0 1rem;
+    max-width: 375px;
+  }
+}
 .favorites__tabs--content .content-heading {
   margin-bottom: 1.375rem;
+}
+@media (min-width: 64em) {
+  .favorites__tabs--content .content-heading {
+    font-size: 1.5rem;
+  }
 }
 .favorites__tabs--content .content-desc {
   font-size: 0.875rem;
   padding-bottom: 3rem;
+}
+@media (min-width: 64em) {
+  .favorites__tabs--content .content-desc {
+    font-size: 1.1875rem;
+  }
+}
+@media (min-width: 64em) {
+  .favorites__tabs--content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .favorites__underline {
   height: 4px;
   background-color: #008248;
   width: 20%;
   transition: all 400ms ease-in-out;
+}
+@media (min-width: 64em) {
+  .favorites__underline {
+    width: 20%;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=style.css.map */

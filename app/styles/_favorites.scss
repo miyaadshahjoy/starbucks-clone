@@ -10,6 +10,11 @@
   }
 
   &__tabs {
+    @include breakpoint-up(large) {
+      width: 100%;
+      max-width: 40rem;
+      margin: 0 auto;
+    }
     &--btn {
       height: 3.25rem;
       width: 20%;
@@ -21,19 +26,48 @@
     &--content {
       text-align: center;
       background-color: $bgColor;
-      .content-image img {
-        display: block;
-        width: 100%;
-        // border: 1px solid red;
-        padding-bottom: 2.5rem;
-        padding-top: 2.5rem;
+      .content-image {
+        flex: 50%;
+        @include breakpoint-up(large) {
+          max-width: 375px;
+        }
+        & img {
+          display: block;
+          width: 100%;
+
+          // border: 1px solid red;
+          padding-bottom: 2.5rem;
+          padding-top: 2.5rem;
+        }
+      }
+      .content-text {
+        flex: 50%;
+        @include breakpoint-up(large) {
+          text-align: start;
+          padding: 0 1rem;
+          max-width: 375px;
+        }
       }
       .content-heading {
         margin-bottom: 1.375rem;
+        @include breakpoint-up(large) {
+          font-size: 1.5rem;
+        }
       }
       .content-desc {
         font-size: $verySmallFont;
         padding-bottom: 3rem;
+        @include breakpoint-up(large) {
+          font-size: $bodyFont;
+        }
+      }
+
+      &-container {
+        @include breakpoint-up(large) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
   }
@@ -42,5 +76,11 @@
     background-color: $mediumJungleGreen;
     width: 20%;
     transition: all 400ms ease-in-out;
+
+    @include breakpoint-up(large) {
+      width: 20%;
+      max-width: 40rem;
+      margin: 0 auto;
+    }
   }
 }
